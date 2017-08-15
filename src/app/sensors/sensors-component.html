@@ -1,0 +1,34 @@
+<!--<div fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start" class="dash-card">-->
+    <!--<div fxFlex.gt-sm="25" fxFlex.gt-xs="50" fxFlex="100" *ngFor="let servor of servors">-->
+        <!--<md-card class="{{servor?.class}}">-->
+            <!--<div md-card-widget>-->
+                <!--<button md-mini-fab color="primary" class="inline-block" md-card-icon>-->
+                    <!--<md-icon>{{servor?.icon}}</md-icon>-->
+                <!--</button><br>-->
+                <!--<div class="inline-block pad-wrap">-->
+                    <!--<h5 md-card-widget-title class="mrgn-b-none">{{ servor?.sensor_name_tx }}</h5>-->
+                    <!--<h5>{{ servor?.sensor_value_tx }}</h5>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</md-card>-->
+    <!--</div>-->
+<!--</div>-->
+<div fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start">
+    <div fxFlex.gt-sm="50" fxFlex="100" *ngFor="let servor of servors">
+        <div fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start center">
+            <div fxFlex.md="100" fxFlex.sm="100" fxFlex.xs="100">
+                <md-card>
+                    <div class="gene-price-wrap text-center">
+                        <div class="text-right mrgn-b-lg">
+                            <span class="label {{servor?.class}} border-rad-base">{{ servor?.mod_dt }}</span>
+                        </div>
+                        <md-icon>{{servor?.icon}}</md-icon>
+                        <!--<i class="fa fa-shield fa-3x mrgn-b-lg gene-block" aria-hidden="true"></i>-->
+                        <p class="mat-text-primary gene-text-xl">{{ servor?.sensor_name_tx }} ( SN: {{ servor?.serialnum_tx }} )</p>
+                        <p>{{ servor?.sensor_value_tx }}</p>
+                    </div>
+                </md-card>
+            </div>
+        </div>
+    </div>
+</div>
