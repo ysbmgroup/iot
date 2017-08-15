@@ -19,8 +19,13 @@ export class SensorsComponent implements OnInit  {
 
   lat: number = 50.937531;
   lng: number = 6.960278600000038;
-  constructor( private pageTitleService: PageTitleService) {
-    
+  constructor( 
+      private pageTitleService: PageTitleService
+  ) { }
+  
+  ngOnInit() {
+    this.pageTitleService.setTitle("Home");
+
     this.servors = [
       {sensor_id:64, sensor_name_tx:"Curtain5 status", sensor_value_tx:"Overloaded open", serialnum_tx:"9386", mod_dt:"2017-05-13 23:41:48", class:"mat-blue-800", icon: "remove_red_eye"},
       {sensor_id:12, sensor_name_tx:"Curtain 2 status T1", sensor_value_tx:"Disconnected", serialnum_tx:"2416", mod_dt:"2017-05-13 17:41:48", class:"mat-red-600", icon: "attach_money"},
@@ -33,8 +38,5 @@ export class SensorsComponent implements OnInit  {
       {sensor_id:56, sensor_name_tx:"T14", sensor_value_tx:"Working", serialnum_tx:"9773", mod_dt:"2017-05-13 10:41:38", class:"mat-green", icon: "notifications_none"},
       {sensor_id:51, sensor_name_tx:"Wind direction", sensor_value_tx:"N", serialnum_tx:"9585", mod_dt:"2017-05-13 12:41:36", class:"mat-brown", icon: "arrow_forward"}
     ];
-  }
-  ngOnInit() {
-    this.pageTitleService.setTitle("Home");
   }
 }

@@ -36,7 +36,6 @@ import { D3ChartService } from "./core/nvD3/nvD3.service";
 import { nvD3 } from "./core/nvD3/nvD3.component";
 
 import { SensorsComponent } from './sensors/sensors.component';
-import { MaterialIconComponent}  from './material-icons/icons.component';
 
 export function createTranslateLoader(http: Http) {
   return new TranslateStaticLoader(http, 'assets/i18n', '.json');
@@ -87,7 +86,6 @@ const sortablejsConfig: SortablejsOptions = {
     GeneAppComponent,
     MainComponent,
     SensorsComponent,
-    MaterialIconComponent,
     nvD3
   ],
   entryComponents: [
