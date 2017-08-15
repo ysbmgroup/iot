@@ -5,9 +5,9 @@
                 <md-card>
                     <div class="gene-price-wrap text-center">
                         <div class="text-right mrgn-b-lg">
-                            <span class="label {{sensorsOptions[i%4]?.class}} border-rad-base">{{ sensor?.mod_dt }}</span>
+                            <span class="label {{sensorsOptions[i%5]?.class}} border-rad-base">{{ sensor?.mod_dt }}</span>
                         </div>
-                        <md-icon>{{sensorsOptions[i%8]?.icon}}</md-icon>
+                        <md-icon>{{sensorsOptions[i%10]?.icon}}</md-icon>
                         <p class="mat-text-primary gene-text-xl">{{ sensor?.sensor_name_tx }} ( SN: {{ sensor?.serialnum_tx }} )</p>
                         <p>{{ sensor?.sensor_value_tx }}</p>
                     </div>
