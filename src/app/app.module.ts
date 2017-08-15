@@ -38,33 +38,6 @@ import { nvD3 } from "./core/nvD3/nvD3.component";
 import { SensorsComponent } from './sensors/sensors.component';
 import { MaterialIconComponent}  from './material-icons/icons.component';
 
-import { CardsComponent }   from './components/cards/cards.component';
-import { ButtonsComponent }   from './components/buttons/buttons.component';
-import { GridListComponent }  from './components/grid-list/gridlist.component';
-import { ListOverviewComponent }  from './components/list/list.component';
-import { MenuOverviewComponent }  from './components/menu/menu.component';
-import { SliderOverviewComponent }  from './components/slider/slider.component';
-import { SnackbarOverviewComponent }  from './components/snackbar/snackbar.component';
-import { TooltipOverviewComponent }  from './components/tooltip/tooltip.component';
-import { DialogOverviewComponent, DemoDialog}  from './components/dialog/dialog.component';
-import { SelectComponent}  from './components/select/select.component';
-import { InputComponent}  from './components/input/input.component';
-import { CheckboxComponent}  from './components/checkbox/checkbox.component';
-import { RadioComponent}  from './components/radio/radio.component';
-import { ToolbarComponent}  from './components/toolbar/toolbar.component';
-import { ProgressComponent}  from './components/progress/progress.component';
-import { TabsComponent}  from './components/tabs/tabs.component';
-import { ColorpickerComponent}  from './components/colorpicker/colorpicker.component';
-import { DatepickerComponent}  from './components/datepicker/datepicker.component';
-
-import { MediaComponent } from './custom-pages/media/media.component';
-import { PricingComponent } from './custom-pages/pricing/pricing.component';
-import { BlankComponent } from './custom-pages/blank/blank.component';
-
-import { LineChartComponent } from './widgets/line-chart/line-chart.component';
-import { PieChartComponent } from './widgets/pie-chart/pie-chart.component';
-import { StackedAreaChartComponent } from './widgets/stacked-area-chart/stacked-area-chart.component';
-
 export function createTranslateLoader(http: Http) {
   return new TranslateStaticLoader(http, 'assets/i18n', '.json');
 }
@@ -115,36 +88,9 @@ const sortablejsConfig: SortablejsOptions = {
     MainComponent,
     SensorsComponent,
     MaterialIconComponent,
-    ButtonsComponent,
-    CardsComponent,
-    GridListComponent,
-    ListOverviewComponent,
-    MenuOverviewComponent,
-    SliderOverviewComponent,
-    SnackbarOverviewComponent,
-    TooltipOverviewComponent,
-    DialogOverviewComponent,
-    DemoDialog,
-    SelectComponent,
-    InputComponent,
-    CheckboxComponent,
-    RadioComponent,
-    ToolbarComponent,
-    ProgressComponent,
-    TabsComponent,
-    ColorpickerComponent,
-    DatepickerComponent,
-    MediaComponent,
-    PricingComponent,
-    BlankComponent,
-
-    LineChartComponent,
-    PieChartComponent,
-    StackedAreaChartComponent,
     nvD3
   ],
   entryComponents: [
-    DemoDialog,
   ],
   bootstrap: [GeneAppComponent],
   providers: [

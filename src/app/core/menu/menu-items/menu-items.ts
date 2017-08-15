@@ -19,7 +19,7 @@ const MENUITEMS = [
     state: 'sensors',
     name: 'SENSORS',
     type: 'link',
-    icon: 'explore',
+    icon: 'web',
   }
 ];
 
