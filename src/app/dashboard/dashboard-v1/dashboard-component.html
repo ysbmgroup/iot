@@ -1,0 +1,15 @@
+<div fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start" class="dash-card">
+    <div fxFlex.gt-sm="20" fxFlex.gt-xs="50" fxFlex="100" *ngFor="let servor of servors">
+        <md-card class="{{servor?.class}}">
+            <div md-card-widget>
+                <button md-mini-fab color="primary" class="inline-block" md-card-icon>
+                    <md-icon>{{servor?.icon}}</md-icon>
+                </button>
+                <div class="inline-block pad-wrap">
+                    <h5 md-card-widget-title class="mrgn-b-none">{{ servor?.sensor_name_tx }}</h5>
+                    <h5>{{ servor?.sensor_value_tx }}</h5>
+                </div>
+            </div>
+        </md-card>
+    </div>
+</div>
